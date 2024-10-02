@@ -14,11 +14,11 @@ jobs:
       CGO_ENABLED: 1
     steps:
       - name: Install Go
-        uses: actions/setup-go@v2
+        uses: actions/setup-go@v5
         with:
           go-version: ${{ matrix.go-version }}
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           # `fetch-depth: 0` gets us all tags.
           fetch-depth: 0
@@ -60,11 +60,11 @@ jobs:
       CGO_ENABLED: 1
     steps:
       - name: Install Go
-        uses: actions/setup-go@v2
+        uses: actions/setup-go@v5
         with:
           go-version: ${{ matrix.go-version }}
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           # `fetch-depth: 0` gets us all tags.
           fetch-depth: 0
